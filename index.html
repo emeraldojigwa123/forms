@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Application</title>
+</head>
+
+<body>
+    <form action="#" onsubmit="if(document.getElementById('agree').checked) {return true;} else {alert('Please indicate that you have read and agreed to the Terms and Condtions');return false;}">
+    <header>
+        <h5>JOB APPLICATION</h5>
+        <hr/>
+     </header>
+    <main>
+        <div class="input-container ic1">
+            <!-- name -->
+            <b><label for="Full name">Full name:</label></b><br><br>
+            <input type="text" class="input" placeholder="John Doe" id="Full name" required/><br/><br/>
+        </div>
+
+        <div class="input-container ic1">
+            <!-- e-mail -->
+            <b><label for="E-mail Address">E-mail Address:</label></b><br><br>
+            <input type="email" class="input" placeholder="Johndoe@gmail.com" id="E-mail Address" required/><br/><br/>
+        </div>
+
+        <div class="input-container ic1">
+            <!--birthdate-->
+            <b><label for="Date of Birth">Date of Birth:</label></b><br><br>
+            <input type="date" class="input" placeholder="DD/MM/YY" id="Date of Birth" required/><br/><br/>
+        </div><br><br><br>
+
+        <div>
+            <!-- Birth Certificate -->
+            <b><label for="Birth Certificate">Please Upload your Birth Certificate</label></b><br/><br>
+            <input type="file" id="Birth Certificate" required/>
+        </div>
+
+        <div class="input-container ic1">
+            <!-- Phone -->
+            <b><label for="Phone">Phone number</label></b><br><br>
+            <input type="tel" class="input" placeholder="+1 00099888" id="Phone" required/>
+        </div><br><br><br>
+
+        <div>
+            <!--Location-->
+            <b><label for="Location">Location</label></b><br>
+            <select id="Location" class="select" required>
+                <option>Nigeria</option>
+                <option>Algeria</option>
+                <option>Niger</option>
+                <option>USA</option>
+                <option>Germany</option>
+                <option>South Africa</option>
+                <option>France</option>
+            </select><br/><br/>
+        </div>
+
+        <div>
+            <!-- Gender -->
+            <label> Please select your gender</label><br/>
+            <input type="radio" name="gender" id="male"/> <label for="male"> Male</label><br>
+            <input type="radio" name="gender" id="female"/> <label for="female">Female </label> <br/><br/>
+        </div>
+
+            <div>
+             <!--position-->
+             <b><label for="position">Select the Position you wish to apply for</label></b><br/>
+             <select id="position" class="select">
+                 <option>Web Developer</option>
+                 <option>UI/UX Designer</option>
+                 <option>Product Manager</option>
+                 <option>Digital Marketer</option>
+                 <option>Graphic Designer</option>
+                 <option>Data Analyst</option>
+                 <option>Product Designer</option>
+             </select><br/><br/>
+            </div>
+
+            <div>
+             <!--Document-->
+             <label for="Document"><b>Please Upload a Document that shows your Qualifications</label><br/></b><br>
+             <input type="file"  id="Document"><br/><br/>
+            </div>
+             
+            <div>
+             <!--Message-->
+             <label for="Message"><b>In not more than 300 words state the reason why you believe you deserve the selected Position</b></label><br><br>
+             <textarea rows="10"  class="input" cols="30" ></textarea> </br>
+             <br>
+            </div>
+
+            <input type="checkbox" name="checkbox" value="check"  id="agree"/>By submiting,you agree to the <a href="https://generator.lorem-ipsum.info/terms-and-conditions"> terms and conditions</a> of this site.<br><br>
+
+            <div>
+             <!--Submit-->
+             <input type="Submit" name="Submit" value="Submit" class="submit" a href="mailto:emeraldojigwa@gmail.com">
+            </div>
+
+        </form>
+    </main>
+</body>
+</html>
+

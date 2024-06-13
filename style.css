@@ -1,0 +1,72 @@
+html{
+    padding: 20px;
+}
+body {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+  }
+  
+  form {
+    background-color:teal;
+    border-radius: 20px;
+    box-sizing:border-box;
+    box-sizing: inherit;
+    height: 100%;
+    padding: 20px;
+    width: 320px;
+
+  }
+  header{
+    color: #000;
+    font-size: 36px;
+    font-weight: 600;
+    margin-top: 30px;
+  }
+  
+  .input-container {
+    height: 50px;
+    position: relative;
+    width: 100%;
+  }
+  
+  .ic1 {
+    margin-top: 40px;
+  }
+  
+  .ic2 {
+    margin-top: 30px;
+  }
+  
+  .input {
+    background-color: #235369;
+    border-radius: 12px;
+    border: 0;
+    box-sizing: border-box;
+    color: #000;
+    font-size: 18px;
+    height: 100%;
+    outline: 0;
+    padding: 4px 20px 0;
+    width: 100%;
+  }
+
+  .select {
+    background-color: #235369;
+    border: 0;
+  }
+  
+  .submit {
+    background-color: #235369;
+    border-radius: 12px;
+    border: 0;
+    color: 000;
+    cursor: pointer;
+    font-size: 18px;
+    height: 50px;
+    width: 100px;
+  }
+  .submit:active {
+    background-color: #06b;
+  }
+  
